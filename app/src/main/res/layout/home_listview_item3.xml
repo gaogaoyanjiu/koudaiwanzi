@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone"
+    >
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/home_tail_iv"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="180dp" />-->
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/home_tail_iv"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@mipmap/jiazaizhanwei" />
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/home_tail_left_iv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/home_tail_iv"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tv_title_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home_tail_iv"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/home_tail_left_iv"
+            android:lineSpacingMultiplier="1.5"
+            android:text="日系最潮美妆，从此简单学化妆！明星御用化妆师，美妆博主集结地。最火爆的美妆社区尽在丸子视频栏目！"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

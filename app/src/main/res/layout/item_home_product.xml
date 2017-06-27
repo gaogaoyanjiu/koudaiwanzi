@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_home_one"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <FrameLayout
+            android:id="@+id/fl_home"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/home_recommend_iv"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:background="@mipmap/jiazaizhanwei" />
+            <TextView
+                android:id="@+id/tv_ISOUTSTOCK"
+                android:textColor="#ff0033"
+                android:textSize="12sp"
+                android:background="@drawable/shape_square"
+                android:text="缺货"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/home_recommend_tv"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fl_home"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1.5"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:text="SUQQU 液体粉底"
+            android:textColor="@android:color/black"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/home_recommend_newprice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home_recommend_tv"
+            android:layout_marginLeft="10dp"
+            android:text="¥554.8"
+            android:textColor="#f24e30"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/tv_home_head_item_old_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/home_recommend_newprice1"
+            android:layout_toRightOf="@+id/home_recommend_newprice1"
+            android:layout_marginLeft="8dp"
+            android:text="120"
+            android:textColor="#f24e30"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+</LinearLayout>

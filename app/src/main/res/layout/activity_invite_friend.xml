@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/wrong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/wrong" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/input_invite_code_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的邀请码 ：6FX3N3"
+            android:textColor="#444444"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/share_to_pengyouquan"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_black_concern"
+            android:padding="10dp"
+            android:text="分享到朋友圈"
+            android:textColor="#444444"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/share_to_friend"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/share_to_pengyouquan"
+            android:background="@drawable/shape_black_concern"
+            android:padding="10dp"
+            android:text="分享给朋友"
+            android:textColor="#444444"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/share_to_weibo"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/share_to_pengyouquan"
+            android:background="@drawable/shape_black_concern"
+            android:padding="10dp"
+            android:text="分享给朋友"
+            android:textColor="#444444"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/rule_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="成功填写邀请人  +50积分"
+            android:textColor="#444444"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rule_one"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="给邀请人增加10%消费金额的积分"
+            android:textColor="#444444"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

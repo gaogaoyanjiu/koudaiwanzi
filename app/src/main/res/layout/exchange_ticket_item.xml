@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="162dp">
+
+        <ImageView
+            android:id="@+id/exchange_ticket_listview_item_iv"
+            android:layout_width="110dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/exchange_ticket_item" />
+
+        <TextView
+            android:id="@+id/exchange_ticket_listview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="28dp"
+            android:layout_toRightOf="@id/exchange_ticket_listview_item_iv"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="ROSETTE 诗留美屋海泥洗面奶"
+            android:textColor="#222222"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/exchange_ticket_listview_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:id="@+id/exchange_ticket_listview_item_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/exchange_ticket_listview_view"
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/exchange_ticket_listview_item_iv"
+            android:text="240"
+            android:textColor="#f598aa"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/exchange_ticket_listview_item_point_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/exchange_ticket_listview_view"
+            android:layout_marginBottom="72dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/exchange_ticket_listview_item_point"
+            android:text="积分"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/exchange_ticket_listview_view"
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/exchange_ticket_listview_item_point_tv"
+            android:background="@drawable/shape_orange_blank"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="抽奖"
+            android:textColor="#f19483"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/exchange_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/exchange_ticket_listview_view"
+            android:layout_marginBottom="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/exchange_ticket_listview_item_iv"
+            android:text="兑换数量："
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/exchange_count_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/exchange_ticket_listview_view"
+            android:layout_marginBottom="45dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/exchange_count_tv"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/exchange_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/exchange_ticket_listview_view"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/exchange_ticket_listview_item_iv"
+            android:text="兑换时间："
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/exchange_time_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/exchange_ticket_listview_view"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/exchange_time_tv"
+            android:text="2016/4/20"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/exchange_ticket_listview_view"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/right" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

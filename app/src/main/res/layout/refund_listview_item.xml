@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_marginBottom="5dp"
+    android:background="#ffffff">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/shopping_car_recyclerview_item_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_gray_blank" />
+
+    <TextView
+        android:id="@+id/shopping_car_recyclerview_item_title"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/shopping_car_recyclerview_item_iv"
+        android:text="UHA悠哈味觉糖KORORO 100%果汁糖葡萄味"
+        android:textColor="#444444"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x1"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_below="@id/shopping_car_recyclerview_item_title"/>
+
+    <TextView
+        android:id="@+id/shopping_car_recyclerview_item_little_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shopping_car_recyclerview_item_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/shopping_car_recyclerview_item_iv"
+        android:text="尺码/净含量：200kg"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/shopping_car_recyclerview_item_newprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shopping_car_recyclerview_item_little_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/shopping_car_recyclerview_item_iv"
+        android:text="¥41.9"
+        android:textColor="#444444"
+        android:textSize="15sp" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/tv_old_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shopping_car_recyclerview_item_little_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/shopping_car_recyclerview_item_newprice"
+        android:text="¥54.40"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联系客服"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_below="@id/tv_old_price"
+        android:background="@drawable/shape_gray_blank"
+        android:padding="5dp"/>
+
+</RelativeLayout>

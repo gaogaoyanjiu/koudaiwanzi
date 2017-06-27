@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="position">
+       <enum name="left_top" value="0"/>
+        <enum name="left_bottom" value="1" />
+        <enum name="right_top" value="2" />
+        <enum name="right_bottom" value="3" />
+    </attr>
+
+    <attr name="radius" format="dimension" />
+
+    <declare-styleable name="ArcMenu">
+        <attr name="position" />
+        <attr name="radius" />
+    </declare-styleable>
+
+        <declare-styleable name="imgView">
+
+        </declare-styleable>
+
+    <declare-styleable name="SpinnerLoader">
+        <attr name="point_color" format="color"/>
+        <attr name="isdynamic" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="RainView">
+        <attr name="rainNum" format="integer"/>
+        <attr name="randColor" format="boolean"/>
+        <attr name="size" format="integer"/>
+        <attr name="rainColor" format="integer"/>
+    </declare-styleable>
+
+
+    <!-- 创建属性名-->
+    <!-- name是自定义的属性名,format是指这个属性名的类型
+        reference|color 代表的是既可以是一个引用(reference 引向本地资源),也可以是一个argb颜色值
+        可以定义各种属性类型,如color、float、integer、boolean-->
+    <!--属性详细介绍:  http://blog.csdn.net/mayingcai1987/article/details/6216655 -->
+    <attr name="background_color_activity" format="reference|color" />
+    <attr name="color_text" format="reference|color" />
+    <attr name="background_color_module" format="reference|color" />
+
+
+</resources>

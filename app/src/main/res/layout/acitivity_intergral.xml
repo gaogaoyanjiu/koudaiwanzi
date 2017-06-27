@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/iv_integral_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="积分说明"
+            android:textSize="18sp" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="#e4e4e4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </RelativeLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:background="@mipmap/intergral1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+        <ImageView
+            android:background="@mipmap/intergral2"
+            android:layout_width="match_parent"
+            android:layout_height="456dp" />
+        <ImageView
+            android:background="@mipmap/intergral3"
+            android:layout_width="match_parent"
+            android:layout_height="523dp" />
+        <ImageView
+            android:background="@mipmap/intergral4"
+            android:layout_width="match_parent"
+            android:layout_height="171dp" />
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

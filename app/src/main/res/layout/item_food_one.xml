@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/top_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:text="4"
+            android:textColor="#fae3de"
+            android:textSize="100sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="95dp"
+            android:text="TOP"
+            android:textColor="#f19483"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/top_iv"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_toRightOf="@id/top_num"
+            android:src="@mipmap/top_product" />
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="90dp"
+                android:src="#f15639" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="限时"
+                android:textColor="#ffffff"
+                android:layout_marginTop="95dp"
+                android:layout_marginLeft="162dp"/>
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="1dp"
+                android:background="#ffffff"
+                android:layout_marginTop="115dp"
+                android:layout_marginLeft="155dp"/>
+
+            <TextView
+                android:id="@+id/discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.0折"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:layout_marginTop="117dp"
+                android:layout_marginLeft="158dp"/>
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/tv_rank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@id/top_iv"
+            android:maxLines="2"
+            android:text="AMANOFOODS天野食品少盐味增汤"
+            android:textColor="#444444"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_rank_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_rank_name"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/top_iv"
+            android:text="￥41"
+            android:textColor="#f24e30"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_rank_originalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_rank_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/tv_rank_new"
+            android:text="￥ 54.44"
+            android:textSize="13dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

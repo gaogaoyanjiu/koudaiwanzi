@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="30dp">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:background="@mipmap/jiazaizhanwei"
+            android:id="@+id/new_sell_imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            />
+        <TextView
+            android:id="@+id/tv_ISOUTSTOCK"
+            android:textColor="#ff0033"
+            android:textSize="12sp"
+            android:background="@drawable/shape_square"
+            android:text="缺货"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="9dp"-->
+            <!--android:textSize="16sp"-->
+            <!--android:text="品牌"-->
+            <!--android:layout_weight="3.2"/>-->
+
+            <TextView
+                android:id="@+id/new_sell_textView_brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.6"
+                android:maxLines="1"
+                android:text="黛珂"
+                android:textSize="15sp" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/new_sell_price"-->
+            <!--android:layout_weight="2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:textSize="16sp"-->
+            <!--android:layout_marginTop="9dp"-->
+            <!--android:textColor="#FF0000"/>-->
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/new_sell_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:maxLines="2"
+            android:text="COSME DECORTE 黛珂AQ MW洁颜乳COSME DECORTE"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+            <!--<TextView-->
+
+            <!--android:id="@+id/new_sell_volume"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="容量"-->
+            <!--android:layout_weight="4"/>-->
+
+            <TextView
+                android:id="@+id/new_sell_volume_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="16"
+                android:text="140g" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/new_sell_old_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="renbinnn"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/new_sell_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="renbinnn"
+                        android:textColor="#FF0000"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/new_sell_buy_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="5"
+                    android:src="@mipmap/mycollection_shopping_car"
+                    android:textColor="#FF0000" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

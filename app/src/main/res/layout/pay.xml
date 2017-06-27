@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+    <ImageView
+
+        android:id="@+id/iv_pay_back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:src="@mipmap/left" />
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正在付款请稍后..."/>
+    <Button
+        android:visibility="gone"
+        android:id="@+id/appay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_register_bg"
+        android:text="微信支付"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/check_pay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appay_btn"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_register_bg"
+        android:text="检测微信版本是否支持付款"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

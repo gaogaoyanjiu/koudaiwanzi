@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_ems_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_myOrder_item1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/order_item" />
+
+        <TextView
+            android:id="@+id/tv_myOrder_item1_name"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_myOrder_item1"
+            android:text="UHA 悠哈味觉糖 KOTOTO 100%"
+            android:textColor="#444444"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_myOrder_item1_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_myOrder_item1_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_myOrder_item1"
+            android:text="口味:蓝莓"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_myOrder_item1_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_myOrder_item1_type"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/iv_myOrder_item1"
+            android:text="¥41"
+            android:textColor="#444444"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_myOrder_item1_Oldprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_myOrder_item1_type"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="17dp"
+            android:textSize="13sp"
+            android:layout_toRightOf="@+id/tv_myOrder_item1_price"
+            android:text="¥54.40" />
+
+        <TextView
+            android:id="@+id/tv_myOrder_item1_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="30dp"
+            android:text="x1" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#e4e4e4" />
+
+</LinearLayout>

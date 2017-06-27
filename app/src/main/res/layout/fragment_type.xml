@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.example.administrator.koudaiwanzi.refresh.PullToRefreshLayout
+        android:id="@+id/refresh_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <include layout="@layout/allview_refresh_head" />
+
+        <com.example.administrator.koudaiwanzi.refresh.PullableExpandableListView
+            android:id="@+id/expandableListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:cacheColorHint="#ffffff"
+            android:divider="#ebebeb"
+            android:dividerHeight="1dp"
+            android:footerDividersEnabled="false"
+            android:groupIndicator="@null" />
+
+        <include layout="@layout/allview_load_more" />
+
+
+    </com.example.administrator.koudaiwanzi.refresh.PullToRefreshLayout>
+
+
+</LinearLayout>

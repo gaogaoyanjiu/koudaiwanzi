@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <RelativeLayout
+                android:id="@+id/rel_showProduct"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignBottom="@+id/show_item_iv1"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:visibility="gone">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginRight="12dp"
+                    android:src="#f15639" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/view"
+                    android:layout_centerHorizontal="true"
+                    android:text="限时"
+                    android:textColor="#ffffff" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/view"
+                    android:layout_centerHorizontal="true"
+                    android:text="5.0折"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/view_item_iv1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/mycollection_item1" />
+
+            <TextView
+                android:id="@+id/show_item_tv1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/view_item_iv1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:maxLines="2"
+                android:text="COSME DECORTE 黛珂AQ MW 洁颜乳"
+                android:textColor="@android:color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/show_item_newprice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/show_item_tv1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:text="¥41"
+                android:textColor="#f24e30"
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="#f24e30"
+                android:id="@+id/show_item_oldprice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/show_item_tv1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@id/show_item_newprice1"
+                android:text="¥54.40"
+                android:textSize="12sp" />
+
+
+            <ImageView
+                android:id="@+id/iv_product_shopCar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/show_item_tv1"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/mycollection_shopping_car" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

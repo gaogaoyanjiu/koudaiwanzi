@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:background="#ffffff"
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_weight="2">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/iv_top_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/jiazaizhanwei" />
+
+            <ImageView
+                android:id="@+id/iv_top_tag"
+                android:src="@mipmap/top1"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="100dp"
+                android:id="@+id/tv_top_ISOUTSTOCK"
+                android:textColor="#ff0033"
+                android:textSize="15sp"
+                android:background="@drawable/shape_square"
+                android:text="缺货"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+
+
+        <RelativeLayout
+            android:background="#ffffff"
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_weight="2">
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/tv_top_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="5dp"
+                android:text="森永morinaga" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/tv_top_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_top_brand"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:maxLines="3"
+                android:text="BAKE烘烤浓厚浓茶味夹心BAKE烘烤浓厚浓茶味" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/tv_top_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_top_name"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:text="38g" />
+
+            <TextView
+                android:textColor="#f24e30"
+                android:id="@+id/tv_top_original_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_top_size"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:text="¥300"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_top_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_top_original_cost"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:text="¥300"
+                android:textColor="#f24e30"
+                android:textSize="15sp" />
+
+
+            <ImageView
+                android:id="@+id/iv_top_shop"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/mycollection_shopping_car" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

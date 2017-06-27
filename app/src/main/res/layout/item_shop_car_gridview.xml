@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="12dp" >
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sv_shop"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@mipmap/jiazaizhanwei"
+            />
+        <TextView
+            android:id="@+id/tv_ISOUTSTOCK"
+            android:textColor="#ff0033"
+            android:textSize="12sp"
+            android:background="@drawable/shape_square"
+            android:text="缺货"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_name_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:lineSpacingMultiplier="1"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:text="案件双方家里多了" />
+
+    <TextView
+        android:id="@+id/tv_price_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:text="110"
+        android:textColor="#ff0033" />
+
+    <TextView
+        android:id="@+id/tv_oldPrice_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:text="220"
+        android:textColor="#ff0033"
+        android:textSize="12sp" />
+
+</LinearLayout>

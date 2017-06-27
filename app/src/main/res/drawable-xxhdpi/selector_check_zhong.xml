@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--&lt;!&ndash; 当当前的状态是点击的,那么就显示dg_btn_confirm_select这张图片 &ndash;&gt;-->
+    <!--<item android:state_pressed="true" android:drawable="@mipmap/hongsezhongping"></item>-->
+    <!--&lt;!&ndash;当前的状态没有任何时间,就显示dg_btn_confirm_select这张图片 &ndash;&gt;-->
+    <!--<item android:drawable="@mipmap/zhongping1x"></item>-->
+    <!--<item android:state_pressed="false" android:drawable="@mipmap/zhongping1x"></item>-->
+
+    <!--<item android:state_checked="true" android:drawable="@mipmap/hongsezhongping" > </item>-->
+    <!--<item android:state_checked="false" android:drawable="@mipmap/zhongping1x" > </item>-->
+
+<!--<item android:state_selected="true" android:drawable="@mipmap/hongsezhongping" > </item>-->
+    <!--<item android:state_selected="false" android:drawable="@mipmap/zhongping1x" > </item>-->
+    <!--<item android:state_focused="true" android:drawable="@mipmap/hongsezhongping"/>-->
+    <!--<item android:state_focused="false" android:drawable="@mipmap/zhongping1x"></item>-->
+
+    <!--<item android:state_checked="false" android:drawable="@mipmap/zhongping1x"/>-->
+    <!--<item android:state_checked="true"  android:drawable="@mipmap/hongsezhongping"/>-->
+    <!--<item android:state_selected="true"  android:drawable="@mipmap/hongsezhongping"/>-->
+    <!--<item android:state_pressed="true"  android:drawable="@mipmap/hongsezhongping"/>-->
+
+
+    <item android:state_checked="true" android:state_window_focused="false"
+        android:drawable="@mipmap/hongsezhongping" />
+    <item android:state_checked="false" android:state_window_focused="false"
+        android:drawable="@mipmap/zhongping1x" />
+    <item android:state_checked="false" android:drawable="@mipmap/zhongping1x" />
+    <item android:state_checked="true" android:drawable="@mipmap/hongsezhongping" />
+
+</selector>

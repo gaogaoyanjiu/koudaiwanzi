@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF">
+        <ImageView
+            android:id="@+id/iv_logistics_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/left" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="物流问题"
+            android:textSize="18dp" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:background="@mipmap/logistics1"
+                android:layout_width="match_parent"
+                android:layout_height="227dp" />
+            <ImageView
+                android:background="@mipmap/logistics2"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+            <ImageView
+                android:background="@mipmap/logistics3"
+                android:layout_width="match_parent"
+                android:layout_height="195dp" />
+            <ImageView
+                android:background="@mipmap/logistics4"
+                android:layout_width="match_parent"
+                android:layout_height="535dp" />
+            <ImageView
+                android:background="@mipmap/logistics5"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

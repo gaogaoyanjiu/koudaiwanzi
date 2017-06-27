@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/listview1_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:descendantFocusability="blocksDescendants">
+
+        <TextView
+            android:id="@+id/tv_manage_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="张小白" />
+
+        <TextView
+            android:id="@+id/tv_manage_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/tv_manage_name"
+            android:text="15652826374" />
+
+        <TextView
+            android:id="@+id/tv_manage_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="收货地址：" />
+
+        <TextView
+            android:id="@+id/tv_manage_province"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/tv_manage_title"
+            android:text="辽宁省" />
+
+        <TextView
+            android:id="@+id/tv_manage_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/tv_manage_province"
+            android:text="大连市" />
+
+        <TextView
+            android:id="@+id/tv_manage_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/tv_manage_city"
+            android:text="高新区" />
+
+        <TextView
+            android:id="@+id/tv_manage_street"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/tv_manage_area"
+            android:maxLines="1"
+            android:text="希贤街29号弘泰" />
+
+        <View
+            android:id="@+id/v_manage_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_manage_title"
+            android:layout_marginTop="20dp"
+            android:background="#e4e4e4" />
+
+        <CheckBox
+            android:id="@+id/ck_manage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v_manage_line"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="默认地址"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tv_manage_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/v_manage_line"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="删除" />
+
+        <ImageView
+            android:id="@+id/iv_manage_delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/v_manage_line"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/tv_manage_title1"
+            android:background="@mipmap/delete" />
+
+        <TextView
+            android:id="@+id/tv_manage_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v_manage_line"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/iv_manage_delete"
+            android:text="编辑" />
+
+        <ImageView
+            android:id="@+id/iv_manage_write"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/v_manage_line"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/tv_manage_title2"
+            android:background="@mipmap/write" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e4e4e4"></View>
+    </LinearLayout>
+
+</LinearLayout>

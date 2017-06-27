@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_merge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/iv_back_merge"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="凑单"
+            android:textColor="#444444"
+            android:textSize="18sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#d6d6d6" />
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/merge_gv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="#d6d6d6" />
+
+        <!--<ImageView-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_marginLeft="55dp"-->
+            <!--android:layout_marginTop="3dp"-->
+            <!--android:background="@mipmap/quanicon" />-->
+
+
+        <RelativeLayout
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="4dp"
+            android:background="@mipmap/quanicon"
+            android:layout_width="20dp"
+            android:layout_height="20dp">
+
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/tv_merge_num1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+
+
+        <ImageView
+            android:id="@+id/iv_merge_shopCar"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:background="@mipmap/shoppingcarblack" />
+
+
+        <TextView
+
+            android:id="@+id/finish_merge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#f24e30"
+            android:padding="10dp"
+            android:text="完成凑单"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_price_merge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/merge_total_price"
+            android:text="¥0.0"
+            android:textColor="#f24e30"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_discount_merge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/merge_total_price"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/iv_merge_shopCar"
+            android:text="已优惠0.0元"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/merge_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总价:"
+            android:textColor="#444444"
+            android:textSize="15sp"
+            android:layout_alignBaseline="@+id/tv_price_merge"
+            android:layout_alignBottom="@+id/tv_price_merge"
+            android:layout_alignLeft="@+id/tv_discount_merge"
+            android:layout_alignStart="@+id/tv_discount_merge" />
+
+    </RelativeLayout>
+
+</LinearLayout>

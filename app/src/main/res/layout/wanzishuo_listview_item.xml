@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/my_wanzishuo_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/head"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fan妹妹"
+            android:layout_toRightOf="@id/my_wanzishuo_head"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="#444444"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/wanzishuo_iv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/home_listview_top" />
+
+        <TextView
+            android:id="@+id/wanzishuo_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wanzishuo_iv"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1.2"
+            android:maxLines="3"
+            android:text="丸子说内容，丸子说内容，丸子说内容，，丸子说内容，丸子说内容，，丸子说内容，丸子说内容，，丸子说内容，丸子说内容，，丸子说内容，丸子说内容，，丸子说内容，丸子说内容，，丸子说内容，丸子说内容，，丸子说内容，丸子说内容，，丸子说内容，丸子说内容，，丸子说内容，丸子说内容，，丸子说内容，丸子说内容。"
+            android:textColor="#444444"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/list_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wanzishuo_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:text="2分钟前"
+            android:textColor="#444444"
+            android:textSize="15sp" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/edit"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_below="@id/wanzishuo_content"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginRight="30dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:text="编辑"-->
+        <!--android:textColor="#444444"-->
+        <!--android:textSize="17sp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/check"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/wanzishuo_content"-->
+        <!--android:layout_marginRight="30dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_toLeftOf="@id/edit"-->
+        <!--android:text="查看"-->
+        <!--android:textColor="#444444"-->
+        <!--android:textSize="17sp" />-->
+
+    </RelativeLayout>
+
+</LinearLayout>

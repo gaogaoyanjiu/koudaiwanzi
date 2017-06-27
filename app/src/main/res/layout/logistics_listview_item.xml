@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circle"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="#8a8a8a"
+        android:layout_marginLeft="20dp"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="1dp"
+        android:layout_height="100dp"
+        android:background="#8a8a8a"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="【大连】您的快递已被签收"
+        android:layout_marginLeft="60dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2016-05-05 12:00:00"
+        android:layout_below="@id/information"
+        android:textSize="15sp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

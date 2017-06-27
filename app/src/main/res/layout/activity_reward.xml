@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:id="@+id/rl_reward"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="参加抽奖"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_tiger"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/left" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#d6d6d6" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:id="@+id/rl_reward2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/rl_reward">
+
+        <TextView
+            android:id="@+id/tv_mall_name_tig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:text="我的积分"
+            android:textColor="#444444"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_mall_score_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_mall_name_tig"
+            android:text=""
+            android:textColor="#f596aa"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/tv_mall_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/tv_mall_score_reward"
+            android:text="分"
+            android:textColor="#f596aa" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_mall_name_tig"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:text="如何获得更多积分?"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_exchange_ticket_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_black1"
+            android:text="兑换记录"
+            android:textColor="#f596aa" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_reward2"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_teger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/seletor_reward"
+            android:button="@null"
+            android:text="老虎机"
+            android:textColor="#ff0033"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/rb_yao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/seletor_reward"
+            android:button="@null"
+            android:text="摇一摇"
+            android:textColor="#ff0033"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+
+    <FrameLayout
+        android:background="#ffffff"
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rg_reward">
+
+    </FrameLayout>
+
+
+</RelativeLayout>

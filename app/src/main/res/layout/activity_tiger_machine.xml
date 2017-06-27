@@ -1,0 +1,174 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:text="参加抽奖"-->
+            <!--android:textSize="18sp" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/iv_tiger"-->
+            <!--android:layout_width="24dp"-->
+            <!--android:layout_height="24dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:src="@mipmap/left" />-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:background="#d6d6d6" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="80dp">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_mall_name_tig"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:text="我的积分"-->
+            <!--android:textColor="#444444"-->
+            <!--android:textSize="15sp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_mall_score"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_toRightOf="@id/tv_mall_name_tig"-->
+            <!--android:text=""-->
+            <!--android:textColor="#f596aa"-->
+            <!--android:textSize="24dp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_mall_name2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_toRightOf="@id/tv_mall_score"-->
+            <!--android:text="分"-->
+            <!--android:textColor="#f596aa" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/tv_mall_name_tig"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="如何获得更多积分?"-->
+            <!--android:textSize="15sp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_exchange_ticket"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:background="@drawable/shape_black1"-->
+            <!--android:text="兑换记录"-->
+            <!--android:textColor="#f596aa" />-->
+
+            <!--</RelativeLayout>-->
+
+            <RelativeLayout
+                android:layout_width="350dp"
+                android:layout_height="330dp"
+                android:background="@mipmap/go">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="49dp">
+
+                    <com.example.administrator.koudaiwanzi.person.point.pointmall.widget.WheelView
+                        android:id="@+id/slot_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="60dp"
+                        android:layout_weight="1" />
+
+                    <com.example.administrator.koudaiwanzi.person.point.pointmall.widget.WheelView
+                        android:id="@+id/slot_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1" />
+
+                    <com.example.administrator.koudaiwanzi.person.point.pointmall.widget.WheelView
+                        android:id="@+id/slot_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_mix"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/transparent" />
+
+                <ListView
+                    android:id="@+id/lv_tiger"
+                    android:layout_width="200dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="190dp"
+                    android:orientation="vertical">
+                </ListView>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/pwd_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:text="come!!baby试试手气"
+                android:textColor="#F00"
+                android:textSize="1sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

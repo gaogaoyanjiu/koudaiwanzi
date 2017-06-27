@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.example.administrator.koudaiwanzi.refresh.PullToRefreshLayout
+        android:id="@+id/refresh_order_send"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/allview_refresh_head" />
+
+        <com.example.administrator.koudaiwanzi.refresh.PullableListView
+            android:id="@+id/listView_order_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+        </com.example.administrator.koudaiwanzi.refresh.PullableListView>
+
+        <include layout="@layout/allview_load_more" />
+
+
+    </com.example.administrator.koudaiwanzi.refresh.PullToRefreshLayout>
+
+
+</LinearLayout>

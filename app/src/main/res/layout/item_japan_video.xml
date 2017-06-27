@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/insideVideoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="fitXY" />
+
+                <com.example.administrator.koudaiwanzi.meatball.texttureview.TextureVideoView
+                    android:id="@+id/textureview"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" />
+
+                <ImageView
+                    android:id="@+id/playVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/action" />
+
+                <ProgressBar
+                    android:id="@+id/pb_waiting"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/progress_progressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="180dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@mipmap/pasu" />
+
+            </FrameLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/rl_all_video_meatBall"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:background="#ffffff">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_japan_head"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="30dp" />
+
+                <TextView
+                    android:id="@+id/tv_japan_name_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_toRightOf="@id/iv_japan_head"
+                    android:ellipsize="end"
+                    android:lineSpacingMultiplier="1.5"
+                    android:maxLines="3"
+                    android:text="日系最潮美妆，从此简单学化妆！明星御用化妆师，美妆博主集结地，最火博的美妆社区尽在丸子视频栏目" />
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/tv_japan_name"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="10dp"
+                    android:text="0"
+                    android:textSize="16sp" />
+
+
+                <FrameLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_japan_name"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@id/count">
+
+                    <ImageView
+
+                        android:id="@+id/thumbs_up"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@mipmap/zan" />
+
+                    <ImageView
+                        android:id="@+id/thumbs_up_selected"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@mipmap/xuanzhong"
+                        android:visibility="gone"
+
+                        />
+
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@mipmap/recommend">
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/mycollection_item_iv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp" />
+
+                    <TextView
+                        android:id="@+id/mycollection_item_tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mycollection_item_iv1"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:lineSpacingMultiplier="1.5"
+                        android:maxLines="2"
+                        android:text=""
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/mycollection_item_newprice1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mycollection_item_iv1"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="60dp"
+                        android:text=""
+                        android:textColor="#f24e30"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_meatBall_price_old"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mycollection_item_iv1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="63dp"
+                        android:layout_toRightOf="@id/mycollection_item_newprice1"
+                        android:text=""
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/mycollection_item_iv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="12dp" />
+
+                    <TextView
+                        android:id="@+id/mycollection_item_tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mycollection_item_iv2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:lineSpacingMultiplier="1.5"
+                        android:maxLines="2"
+                        android:text=""
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/mycollection_item_newprice2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mycollection_item_iv2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="60dp"
+                        android:text=""
+                        android:textColor="#f24e30"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_meatBall_price_old_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mycollection_item_iv2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="63dp"
+                        android:layout_toRightOf="@id/mycollection_item_newprice2"
+                        android:text=""
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/mycollection_item_iv3"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp" />
+
+                    <TextView
+                        android:id="@+id/mycollection_item_tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mycollection_item_iv3"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:lineSpacingMultiplier="1.5"
+                        android:maxLines="2"
+                        android:text=""
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/mycollection_item_newprice3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mycollection_item_iv3"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="60dp"
+                        android:text=""
+                        android:textColor="#f24e30"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_meatBall_price_old_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mycollection_item_iv3"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="63dp"
+                        android:layout_toRightOf="@id/mycollection_item_newprice3"
+                        android:text=""
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+
+</LinearLayout>

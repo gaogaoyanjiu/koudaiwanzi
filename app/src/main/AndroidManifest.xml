@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.koudaiwanzi">
+
+    <!--第三方分享需要添加的清单文件-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!--调用打电话权限-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.hardware.sensor.accelerometer" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+    <application
+        android:name=".base.MyApplication"
+        android:allowBackup="true"
+
+        android:icon="@mipmap/icon2"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+
+            android:name=".person.collection.CollectionActivity" />
+        <activity android:name=".person.point.MyPointActivity" />
+        <activity android:name=".product.ShowProductActivity" />
+        <activity android:name=".person.point.exchangticket.ExchangeActivity" />
+
+        <activity
+            android:name=".person.set.AccountActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"></activity>
+
+
+        <activity android:name=".person.address.AddressActivity" />
+        <activity android:name=".person.address.NewAddressActivity" />
+        <activity android:name=".person.order.OrderAllActivity" />
+        <activity android:name=".shopcar.OrderActivity" />
+        <activity android:name=".person.coupon.CouponActivity" />
+        <activity android:name=".home.search.SearchActivity" />
+        <activity android:name=".person.login.LoginActivity" />
+        <activity android:name=".person.register.RegisterActivity" />
+        <activity android:name=".details.DetailsActivity" />
+        <activity android:name=".upload.PhotoUpload" />
+        <activity android:name=".classification.type.screen.ClassActivity" />
+        <activity android:name=".person.address.chooseAddress.activity.ChooseAddressActivity" />
+        <activity android:name=".person.address.chooseAddress.activity.ChooseAddress1Activity" />
+        <activity android:name=".person.address.ChangeAddressActivity" />
+        <activity android:name=".person.point.PointRuleActivity" />
+        <activity android:name=".person.point.pointmall.scoremall.ScoreMallActivity" />
+        <activity android:name=".meatball.DetailBallActivity" />
+        <activity android:name=".meatball.DetailsVideoActivity" />
+        <activity android:name=".shopcar.MergeActivity" />
+        <activity android:name=".person.login.country.CountryActivity" />
+        <activity android:name=".person.set.DateActivity" />
+        <activity android:name=".person.concern.ConcernActivity" />
+        <activity android:name=".person.concern.ConcernPersonActivity" />
+        <activity android:name=".person.inviter.InviterActivity" />
+        <activity android:name=".person.invitefriend.InviteFriendActivity" />
+        <activity android:name=".person.mymeatball.MyMeatBallActivity" />
+        <activity android:name=".person.mymeatball.AddMeatBallActivity" />
+        <activity android:name=".person.reject.RejectActivity" />
+        <activity android:name=".person.reject.RejectServiceActivity" />
+        <activity android:name=".person.mymeatball.MyMeatBallDetailActivity" />
+        <activity android:name=".person.register.ForgetActivity" />
+        <activity android:name=".classify.ClassifyActivity" />
+        <activity android:name=".guidepage.GuidePageActivity" />
+        <activity android:name=".shopcar.SelectAddressActivity" />
+        <activity
+            android:name=".MainActivity" />
+
+        <activity android:name=".selling.SellActivity" />
+        <activity android:name=".newproduct.NewProductActivity" />
+        <activity android:name=".classification.brand.BrandActivity" />
+        <activity android:name=".rank.RankTwoActivity" />
+        <activity android:name=".person.question.QuestionActivity" />
+        <activity android:name=".newsell.NewSellActivity" />
+        <activity android:name=".person.question.DiscountActivity" />
+        <activity android:name=".person.question.IntegralActivity" />
+        <activity android:name=".person.question.LogisticsActivity" />
+        <activity android:name=".person.question.OrderQuestionActivity" />
+        <activity android:name=".person.question.ServerEmailActivity" />
+        <activity android:name=".person.question.TariffActivity" />
+        <activity android:name=".person.question.ServerQuestionActivity" />
+        <activity android:name=".person.register.RegisterAgreementActivity" />
+        <activity android:name=".upload.IdCardActivity" />
+        <activity android:name=".shopcartwo.ShopActivity" />
+        <activity android:name=".person.point.pointmall.RewardActivity" />
+        <activity android:name=".unionpay.Unionpay" />
+        <activity android:name=".person.coupon.CouponNewActivity" />
+        <activity android:name=".person.login.ReviseActivity" />
+        <activity android:name=".person.mymeatball.AddMeatBallPActivity" />
+        <activity android:name=".person.reject.MyRejectActivity" />
+        <activity
+            android:name=".person.point.pointmall.WindowActivity"
+            android:theme="@style/MyDialogStyle" />
+        <activity android:name=".ems.EMSActivity" />
+        <activity android:name=".person.order.OrderDetailActivity" />
+        <activity android:name=".person.order.EvaluateActivity" />
+        <activity android:name=".details.DetailsTwoActivity" />
+
+        <receiver android:name=".AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="wxe24ef99553c9f77b" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".PayActivity"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+
+        <!--分享必要的activity-->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!-- QQ和QQ空间分享 QQ登录的回调必须要配置的 -->
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 新浪微博客户端分享回调必须配置 -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity android:name=".zfb.PayDemoActivity"/>
+
+    </application>
+
+</manifest>

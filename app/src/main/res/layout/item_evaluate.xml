@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_evaluate_head"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/head" />
+
+        <TextView
+            android:id="@+id/tv_evaluate_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/iv_evaluate_head"
+            android:text="王思聪" />
+
+        <TextView
+            android:id="@+id/tv_item_evaluate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_evaluate_head"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:text="料子有点贴身，不是很喜欢" />
+
+        <TextView
+            android:id="@+id/tv_evaluate_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_evaluate"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:text="2016.04.29 尺码：480/XL 颜色：黑色"
+            android:textColor="#4e4e4e"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

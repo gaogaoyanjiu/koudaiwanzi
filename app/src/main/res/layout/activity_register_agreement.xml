@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/registerAgreement1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/register1"
+                />
+            <ImageView
+                android:id="@+id/registerAgreement2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/register2"
+                />
+            <ImageView
+                android:id="@+id/registerAgreement3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/register3"
+                />
+            <ImageView
+                android:id="@+id/registerAgreement4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/register4"
+                />
+            <ImageView
+                android:id="@+id/registerAgreement5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/register5"
+                />
+            <ImageView
+                android:id="@+id/registerAgreement6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/register6"
+                />
+            <ImageView
+                android:id="@+id/registerAgreement7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/register7"
+                />
+            <ImageView
+                android:id="@+id/registerAgreement8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/register8"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

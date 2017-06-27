@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="购物口袋"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/shopping_car_title_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/home_title_right" />
+
+        <TextView
+            android:id="@+id/tv_sc_bj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/shopping_car_title_message"
+            android:text="编辑"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_sc_wc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/shopping_car_title_message"
+            android:text="完成"
+            android:textSize="15sp"
+            android:visibility="gone" />
+     <View
+         android:layout_alignParentBottom="true"
+         android:background="#e4e4e4"
+         android:layout_width="match_parent"
+         android:layout_height="1dp"/>
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:visibility="gone"-->
+        <!--android:id="@+id/rl_sc_safe"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:background="#ffffff">-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_centerInParent="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:drawableLeft="@mipmap/safe_shopping"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="您正在安全购物环境中 请安心购物"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="13sp" />&ndash;&gt;-->
+
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/sp_rl_store"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:drawableLeft="@mipmap/wanzicangku"
+            android:text=" 丸子仓库"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/shopping_car_orange_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/orange_right" />
+
+        <TextView
+            android:id="@+id/tv_sc_cou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/shopping_car_orange_right"
+            android:text="去凑单"
+            android:textColor="#f24e30"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.example.administrator.koudaiwanzi.refresh.xlistview.XListViewSwipe
+            android:id="@+id/shopping_car_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff" />
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/shopping_car_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/shop_car_no"
+             />
+        <TextView
+            android:visibility="gone"
+            android:textColor="#ACAAAA"
+            android:id="@+id/tv_sc_title"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/shopping_car_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的心好空呀~"/>
+        <RelativeLayout
+            android:id="@+id/tv_sc_title1"
+            android:visibility="gone"
+            android:background="@mipmap/shop_car_bg"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_sc_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#BE1633"
+                android:textSize="15sp"
+                android:layout_centerInParent="true"
+                android:text="剁手去"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_sc_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="#d6d6d6" />
+
+        <CheckBox
+            android:id="@+id/shopping_car_checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:checked="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/shopping_car_checkbox1"
+            android:text="全选"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/tv_sc_collect"
+            android:background="@drawable/gray_collect"
+            android:text="分享" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_sc_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/tv_sc_delete"
+            android:background="@drawable/gray_collect"
+            android:text="加入收藏" />
+
+        <TextView
+            android:id="@+id/tv_sc_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/red_delect"
+            android:text="删除"
+            android:textColor="#f24e30" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_sc_2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="#d6d6d6" />
+
+        <CheckBox
+            android:id="@+id/shopping_car_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:checked="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/shopping_car_checkbox"
+            android:text="全选"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#f24e30"
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:paddingTop="20dp"
+            android:text="结算  (0)"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/shopping_car_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@id/balance"
+            android:text="0"
+            android:textColor="#f24e30"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/shopping_car_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@id/shopping_car_price"
+            android:text="总价："
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_favourable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shopping_car_total"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/balance"
+            android:text="已优惠0元"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+</LinearLayout>

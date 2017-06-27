@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#F24e30</color>
+    <color name="transparent_background">#80ffffff</color>
+    <color name="transparent">#0000</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="no_color">#00000000</color>
+    <color name="bg_color">#F4F3F3</color>
+    <color name="bg_color_deep">#E5E5E5</color>
+    <color name="black">#000000</color>
+    <color name="text_color">#434343</color>
+    <color name="black_half">#50000000</color>
+    <color name="single_searcg_bg">#8B8682</color>
+    <color name="common_top_bar_blue">#ff0033</color>
+</resources>

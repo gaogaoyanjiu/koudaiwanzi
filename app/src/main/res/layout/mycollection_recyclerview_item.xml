@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:id="@+id/fl_other"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="20dp">
+
+                <ImageView
+                    android:id="@+id/mycollection_item_iv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:src="@mipmap/mycollection_item1" />
+
+                <TextView
+                    android:id="@+id/tv_ISOUTSTOCK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape_square"
+                    android:text="缺货"
+                    android:textColor="#ff0033"
+                    android:textSize="12sp" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/mycollection_item_tv1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/fl_other"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:maxLines="2"
+                android:text=""
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/mycollection_item_oldprice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mycollection_item_tv1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/mycollection_item_newprice1"
+                android:text="¥54.40"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mycollection_item_newprice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/mycollection_item_oldprice1"
+                android:layout_alignLeft="@+id/mycollection_item_tv1"
+                android:layout_alignStart="@+id/mycollection_item_tv1"
+                android:layout_marginLeft="41dp"
+                android:layout_marginStart="41dp"
+                android:text="¥41"
+                android:textColor="#f24e30"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#d6d6d6" />
+
+</LinearLayout>
